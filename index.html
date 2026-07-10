@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Modern Image Gallery</h1>
+
+    <input type="text" id="search" placeholder="Search images...">
+
+    <button id="themeBtn">🌙</button>
+
+    <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="nature">Nature</button>
+        <button class="filter" data-filter="animals">Animals</button>
+        <button class="filter" data-filter="city">City</button>
+    </div>
+
+</header>
+
+<div class="gallery">
+
+    <div class="image nature">
+        <img src="images/nature1.jpg">
+    </div>
+
+    <div class="image animals">
+        <img src="images/animal1.webp">
+    </div>
+
+    <div class="image city">
+        <img src="images/city1.webp">
+    </div>
+
+    <div class="image nature">
+        <img src="images/nature2.webp">
+    </div>
+
+    <div class="image animals">
+        <img src="images/animal2.webp">
+    </div>
+
+    <div class="image city">
+        <img src="images/city2.webp">
+    </div>
+
+</div>
+
+<div class="lightbox">
+
+<span id="close">&times;</span>
+
+<button id="prev">❮</button>
+
+<img id="lightImg">
+
+<button id="next">❯</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
